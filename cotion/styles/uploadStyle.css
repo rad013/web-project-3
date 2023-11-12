@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #cca43b;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  background-color: #003049;
+}
+
+.header .left {
+  display: flex;
+}
+
+.header img {
+  width: 7rem;
+}
+
+.header .mid {
+  display: flex;
+  gap: 5rem;
+}
+
+.header .right img {
+  width: 4rem;
+}
+
+.header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.form_container {
+  background-color: white;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.form_container h1 {
+  font-size: 3rem;
+}
+
+form {
+  padding-top: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  font-size: 1.5rem;
+}
+
+.submit {
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #003049;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#notes {
+  height: 15vh;
+}
+
+#file_upload:invalid::after {
+  content: "*";
+  color: red;
+
+}
+
+.footer {
+  padding: 20px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

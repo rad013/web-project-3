@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/uploadStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <img src="assets/cotion-logo.png" alt="logo" />
+      </div>
+      <div class="mid">
+        <a href="./homePage.html">Home</a>
+        <a href="./uploadPage.html" style="color: #cca43b">Upload</a>
+        <a href="./historyPage.html">History</a>
+      </div>
+      <div class="right">
+        <img src="./assets/icons8-male-user-72(@3x).png" alt="profile" />
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="form_container">
+        <h1>Upload</h1>
+
+        <form id="upload_form">
+          <label for="notes">Notes</label><br />
+          <textarea id="notes" name="notes"></textarea><br />
+          <label for="file_upload">Upload file</label><br />
+          <input type="file" id="file_upload" name="file_upload" required /><br /><br />
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>&copy; 2502021310 Muhammad Radityo Wicaksono</h3>
+    </div>
+
+    <script>
+      document
+        .getElementById("upload_form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Form submitted successfully!");
+        });
+    </script>
+  </body>
+</html>
